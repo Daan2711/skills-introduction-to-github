@@ -1,0 +1,42 @@
+NewContent1.xaml
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourApp.NewPage1"
+             BackgroundColor="Black">
+
+    <VerticalStackLayout Padding="20" Spacing="30" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Label Text="¡Bienvenido a Berserker!" 
+               TextColor="White" 
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
+
+MainPage.xaml
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourApp.MainPage"
+             BackgroundColor="Black">
+
+    <VerticalStackLayout Padding="20" Spacing="30" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Image Source="your_logo.png" HorizontalOptions="Center" />
+
+        <Button Text="Iniciar Sesión"
+                BackgroundColor="#FF0000"
+                TextColor="White"
+                CornerRadius="10"
+                WidthRequest="200"
+                Clicked="OnLoginClicked"/>
+
+        <Button Text="Crear Cuenta"
+                BackgroundColor="#FF0000"
+                TextColor="White"
+                CornerRadius="10"
+                WidthRequest="200"
+                Clicked="OnCreateAccountClicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
